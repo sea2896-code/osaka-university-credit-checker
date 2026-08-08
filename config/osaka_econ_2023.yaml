@@ -1,0 +1,38 @@
+{
+  "academic_year": 2023,
+  "graduation_total": 130,
+  "requirements": {
+    "doorway": 2,
+    "basic_liberal": 10,
+    "information": 2,
+    "health_sports": 2,
+    "advanced_liberal": 2,
+    "first_language": 8,
+    "second_language": 4,
+    "global_understanding": 4,
+    "advanced_international": 2,
+    "professional_foundation": 4,
+    "professional_required": 6,
+    "elective_required_1": 12,
+    "elective_required_2": 28,
+    "professional_elective": 22,
+    "free_elective": 22
+  },
+  "overflow": {
+    "professional_seminar_to_elective_max": 2,
+    "research_seminar_to_elective_max": 4,
+    "basic_liberal_to_free": true,
+    "advanced_liberal_to_free": true,
+    "multilingual_to_free": true,
+    "advanced_international_to_free": true,
+    "professional_to_free": true,
+    "health_sports_to_free": false
+  },
+  "required_courses": {
+    "basic_liberal": ["ミクロ経済学の考え方", "マクロ経済学の考え方"],
+    "information": ["情報社会基礎"],
+    "health_sports": ["スポーツ実習A"],
+    "professional_foundation": ["解析学入門", "線形代数学入門"]
+  },
+  "second_languages": ["ドイツ語", "フランス語", "ロシア語", "中国語"]
+}
