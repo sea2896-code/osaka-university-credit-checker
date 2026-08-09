@@ -21,8 +21,9 @@ def show_koan_steps() -> None:
     <div class="dialog-steps">
       <div class="dialog-step"><span>🔐</span><div><small>STEP 1</small><b>KOANにログインします</b><p>阪大生のみログイン可能なKOANにアクセスします。</p></div></div>
       <div class="dialog-step"><span>📊</span><div><small>STEP 2</small><b>「成績」アイコンをクリックします</b></div></div>
-      <div class="dialog-step"><span>⚙️</span><div><small>STEP 3</small><b>表示範囲を「過去を含めた全成績」にします</b></div></div>
-      <div class="dialog-step"><span>⬇️</span><div><small>STEP 4</small><b>「CSVに出力する」をクリックします</b></div></div>
+      <div class="dialog-step"><span>📚</span><div><small>STEP 3</small><b>「取得単位状況照会」をクリックします</b></div></div>
+      <div class="dialog-step"><span>⚙️</span><div><small>STEP 4</small><b>「過去を含めた全成績」にします</b></div></div>
+      <div class="dialog-step"><span>⬇️</span><div><small>STEP 5</small><b>「ファイルに出力する」をクリックします</b></div></div>
     </div>
     """, unsafe_allow_html=True)
 
@@ -42,7 +43,7 @@ st.markdown("""
 .step{min-height:150px;padding:1rem;border-radius:18px;background:#f8faff;border:1px solid #e7ecff}
 .step:nth-child(2){background:#fff6fa;border-color:#ffe2ee}.step:nth-child(3){background:#fffbea;border-color:#fff0ae}.step:nth-child(4){background:#effbf6;border-color:#d4f2e4}
 .step-icon{font-size:1.65rem}.step-label{margin:.5rem 0 .15rem;color:var(--blue);font-size:.7rem;font-weight:900;letter-spacing:.08em}.step b{display:block;color:var(--navy);font-size:.9rem;line-height:1.4}.step p{color:var(--muted);font-size:.76rem;line-height:1.45;margin:.35rem 0 0}
-.dialog-steps{display:grid;gap:.65rem}.dialog-step{display:flex;align-items:flex-start;gap:.8rem;padding:.85rem;border-radius:16px;background:#f8faff;border:1px solid #e7ecff}.dialog-step:nth-child(2){background:#fff6fa;border-color:#ffe2ee}.dialog-step:nth-child(3){background:#fffbea;border-color:#fff0ae}.dialog-step:nth-child(4){background:#effbf6;border-color:#d4f2e4}.dialog-step>span{font-size:1.5rem}.dialog-step small{display:block;color:var(--blue);font-size:.67rem;font-weight:900;letter-spacing:.08em}.dialog-step b{display:block;color:var(--navy);font-size:.9rem;margin-top:.12rem}.dialog-step p{color:var(--muted);font-size:.76rem;margin:.25rem 0 0}
+.dialog-steps{display:grid;gap:.65rem}.dialog-step{display:flex;align-items:flex-start;gap:.8rem;padding:.85rem;border-radius:16px;background:#f8faff;border:1px solid #e7ecff}.dialog-step:nth-child(2){background:#fff6fa;border-color:#ffe2ee}.dialog-step:nth-child(3){background:#fffbea;border-color:#fff0ae}.dialog-step:nth-child(4){background:#effbf6;border-color:#d4f2e4}.dialog-step:nth-child(5){background:#f2f6ff;border-color:#dce6ff}.dialog-step>span{font-size:1.5rem}.dialog-step small{display:block;color:var(--blue);font-size:.67rem;font-weight:900;letter-spacing:.08em}.dialog-step b{display:block;color:var(--navy);font-size:.9rem;margin-top:.12rem}.dialog-step p{color:var(--muted);font-size:.76rem;margin:.25rem 0 0}
 .result-card{position:relative;overflow:hidden;padding:1.65rem 1.8rem;border-radius:28px;background:linear-gradient(135deg,#172554 0%,#263b7c 68%,#4f7cff 100%);color:white;box-shadow:0 20px 42px rgba(23,37,84,.18);margin:1.4rem 0 1rem}
 .result-card.success{background:linear-gradient(135deg,#12634a,#239a70)}.result-card.near{background:linear-gradient(135deg,#6b3dbd,#ff6fae)}
 .result-label{font-size:.75rem;letter-spacing:.1em;font-weight:800;opacity:.72}.result-title{font-size:clamp(1.65rem,3vw,2.45rem);font-weight:900;margin:.35rem 0}.remaining-wrap{display:flex;align-items:end;gap:.55rem;margin:.65rem 0}.remaining-number{font-size:clamp(4rem,8vw,6.8rem);line-height:.8;font-weight:950;letter-spacing:-.06em}.remaining-unit{font-weight:800;font-size:1rem;padding-bottom:.35rem}.result-copy{opacity:.88;font-weight:650}.result-meta{display:flex;gap:.55rem;flex-wrap:wrap;margin-top:1rem}.pill{padding:.4rem .7rem;border-radius:999px;background:rgba(255,255,255,.14);font-size:.78rem;font-weight:750}
